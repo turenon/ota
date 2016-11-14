@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Opspam</title>
+
+
+		<!-- Fav and touch icons -->
+		<link rel="shortcut icon" href="{{static_url("ico/favicon.ico")}}" type="image/x-icon" />
+
+	    <!-- Css files -->
+	    <link href="{{static_url("css/bootstrap.min.css")}}" rel="stylesheet">
+		<link href="{{static_url("css/jquery.mmenu.css")}}" rel="stylesheet">
+		<link href="{{static_url("css/font-awesome.min.css")}}" rel="stylesheet">
+		<link href="{{static_url("css/climacons-font.css")}}" rel="stylesheet">
+		<link href="{{static_url("plugins/xcharts/css/xcharts.min.css")}}" rel=" stylesheet">
+		<link href="{{static_url("plugins/fullcalendar/css/fullcalendar.css")}}" rel="stylesheet">
+		<link href="{{static_url("plugins/morris/css/morris.css")}}" rel="stylesheet">
+		<link href="{{static_url("plugins/jquery-ui/css/jquery-ui-1.10.4.min.css")}}" rel="stylesheet">
+		<link href="{{static_url("plugins/jvectormap/css/jquery-jvectormap-1.2.2.css")}}" rel="stylesheet">
+	    <link href="{{static_url("css/style.min.css")}}" rel="stylesheet">
+		<link href="{{static_url("css/add-ons.min.css")}}" rel="stylesheet">
+</head>
+
+<body>
+        <script src="{{static_url("js/jquery-2.1.1.min.js")}}"></script>
+        <script src="{{static_url("js/bootstrap.min.js")}}"></script>
+        <script src="{{static_url("plugins/xcharts/js/xcharts.min.js")}}"></script>
+        <script src="{{static_url("plugins/autosize/jquery.autosize.min.js")}}"></script>
+        <script src="{{static_url("plugins/placeholder/jquery.placeholder.min.js")}}"></script>
+        <script src="{{static_url("plugins/datatables/js/jquery.dataTables.min.js")}}"></script>
+        <script src="{{static_url("plugins/datatables/js/dataTables.bootstrap.min.js")}}"></script>
+        <script src="{{static_url("js/jquery.mmenu.min.js")}}"></script>
+        <script src="{{static_url("js/core.min.js")}}"></script>
+<!-- start: Header -->
+	<div class="navbar" role="navigation">
+
+		<div class="container-fluid">
+
+			<ul class="nav navbar-nav navbar-actions navbar-left">
+				<li class="visible-md visible-lg"><a href="index.html#" id="main-menu-toggle"><i class="fa fa-th-large"></i></a></li>
+				<li class="visible-xs visible-sm"><a href="index.html#" id="sidebar-menu"><i class="fa fa-navicon"></i></a></li>
+			</ul>
+
+			<form class="navbar-form navbar-left">
+				<button type="submit" class="fa fa-search"></button>
+				<input type="text" class="form-control" placeholder="Search..."></a>
+			</form>
+	        <ul class="nav navbar-nav navbar-right">
+				<li class="dropdown visible-md visible-lg">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-gears"></i></a>
+					<ul class="dropdown-menu update-menu" role="menu">
+                        </li>
+                        <li><a href="#"><i class="fa fa-bell"></i> Notification </a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-envelope"></i> Message </a>
+                        </li>
+                        <li><a href="/user"><i class="fa fa-users"></i> 账号管理</a>
+                        </li>
+					</ul>
+				</li>
+				<li class="dropdown visible-md visible-lg">
+	        		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="user-avatar" src="{{static_url("img/avatar.jpg")}}" alt="user-mail">{{ current_user }}</a>
+	        		<ul class="dropdown-menu">
+						<li class="dropdown-menu-header">
+							<strong>个人设置</strong>
+						</li>
+						<li><a href="page-profile.html"><i class="fa fa-user"></i> 密码修改</a></li>
+						<li><a href="/uploadkey"><i class="fa fa-wrench"></i> SSH_key设置</a></li>
+						<li><a href="/logout"><i class="fa fa-sign-out"></i> Logout</a></li>
+	        		</ul>
+	      		</li>
+				<li><a href="/logout"><i class="fa fa-power-off"></i></a></li>
+			</ul>
+
+		</div>
+
+	</div>
+	<!-- end: Header -->
+
+	<div class="container-fluid">
+		<div class="row-fluid" >
+			<div class="span2">
+				{% include 'nav.html' %}
+			</div>
+
+			<div class="span10">
+				<nav class="bg">
+					<ul>
+						<li><a href="#">运维平台</a></li>
+					</ul>
+				</nav>
+				{% block content %}{% end %}
+			</div>
+		</div>
+	</div>
+
+</body>

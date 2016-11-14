@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Proton - LOGIN</title>		
+		
+		<!-- Import google fonts - Heading first/ text second -->
+
+		<!-- Favicon and touch icons -->
+		<link rel="shortcut icon" href="{{static_url("ico/favicon.ico")}}" type="image/x-icon" />
+
+	    <!-- Css files -->
+	    <link href="{{static_url("css/bootstrap.min.css")}}" rel="stylesheet">
+		<link href="{{static_url("css/jquery.mmenu.css")}}" rel="stylesheet">
+		<link href="{{static_url("css/font-awesome.min.css")}}" rel="stylesheet">
+		<link href="{{static_url("plugins/jquery-ui/css/jquery-ui-1.10.4.min.css")}}" rel="stylesheet">
+	    <link href="{{static_url("css/style.min.css")}}" rel="stylesheet">
+		<link href="{{static_url("css/add-ons.min.css")}}" rel="stylesheet">
+		<style>
+			footer {
+				display: none;
+			}
+		</style>
+
+	</head>
+</head>
+
+<body>
+	<div class="container-fluid content">
+		<div class="row">
+			<div id="content" class="col-sm-12 full">
+				<div class="row">
+					<div class="login-box">
+					
+						<div class="header">
+						Login to Proton
+						</div>
+						<div class="text-center">
+							<li><a href="" class="fa fa-facebook facebook-bg"></a></li>
+							<li><a href="" class="fa fa-twitter twitter-bg"></a></li>
+							<li><a href="" class="fa fa-linkedin linkedin-bg"></a></li>
+						</div>				
+					
+						<div class="text-with-hr">
+							<span>or</span>
+						</div>
+					
+						<form class="form-horizontal login"  method="post">
+						
+							<fieldset class="col-sm-12">
+								<div class="form-group">
+									<div class="controls row">
+										<div class="input-group col-sm-12">	
+											<input type="text" class="form-control" name="username" placeholder="Username or E-mail"/>
+											<span class="input-group-addon"><i class="fa fa-user"></i></span>
+										</div>	
+									</div>
+								</div>
+							
+								<div class="form-group">
+									<div class="controls row">
+										<div class="input-group col-sm-12">	
+											<input type="password" class="form-control" name="password" placeholder="Password"/>
+											<span class="input-group-addon"><i class="fa fa-key"></i></span>
+										</div>	
+									</div>
+								</div>
+
+								<div class="confirm">
+									<input type="checkbox" name="remember"/>
+									<label for="remember">Remember me</label>
+								</div>	
+
+								<div class="row">
+							
+									<button type="submit" class="btn btn-lg btn-primary col-xs-12">登陆</button>
+							
+								</div>
+								
+							</fieldset>	
+
+						</form>
+					
+						<a class="pull-left" href="page-login.html#">Forgot Password?</a>
+						<a class="pull-right" href="page-register.html">Sign Up!</a>
+					
+						<div class="clearfix"></div>				
+						
+					</div>
+				</div><!--/row-->
+		
+			</div>	
+			
+		</div><!--/row-->		
+	
+
+		
+	</div><!--/container-->
+		
+		
+
+			<script src="{{static_url("js/jquery-2.1.1.min.js")}}"></script>
+
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src="{{static_url('js/jquery-2.1.1.min.js')}}">"+"<"+"/script>");
+		</script>
+
+	<script src="{{static_url("js/jquery-migrate-1.2.1.min.js")}}"></script>
+	<script src="{{static_url("js/bootstrap.min.js")}}"></script>
+	
+	
+	<!-- page scripts -->
+	
+	<!-- theme scripts -->
+	<script src="{{static_url("js/SmoothScroll.js")}}"></script>
+	<script src="{{static_url("js/jquery.mmenu.min.js")}}"></script>
+	<script src="{{static_url("js/core.min.js")}}"></script>
+
+	
+	<!-- end: JavaScript-->
+	
+</body>
+</html>
