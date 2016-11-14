@@ -11,8 +11,6 @@ from handler.ota import *
 url=[
     (r"/",LoginHandler),
     (r"/logout", LogoutHandler),
-    #(r"/index",IndexHandler),
-    #用户管理
     (r"/file",OtaHandler),
     (r"/adduser",AddUserHandler),
     (r"/user",UserHandler),

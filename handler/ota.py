@@ -3,13 +3,10 @@
 import tornado.web
 from base import BaseHandler
 import os
-from api.jenkins_api import *
 from tornado import gen
 import time
 from time import sleep
 
-taskOta = 'ota'
-JenCon = jenkinsapi()
 
 
 class OtaHandler(BaseHandler):
